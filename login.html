@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .top {
+            width: auto;
+            height: 80px;
+            margin: 80px;
+            font-size: 4.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 900px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav {
+            font-size: 1.5rem;
+            height: 50px;
+            margin: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 50px;
+        }
+
+        .header {
+            width: 800px;
+            height: 50px;
+            margin: 20px auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-menu {
+            width: 500px;
+            height: 70px;
+            font-size: 1.2rem;
+            border: 1px solid lightgray;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            margin: 60px;
+            width: 800px;
+            height: 400px;
+            font-size: 1.3rem;
+            border: 1px solid rgb(141, 139, 139);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            font-size: 1.5rem;
+            margin: 20px;
+        }
+
+        button {
+            width: 480px;
+            height: 70px;
+            margin: 15px auto;
+            margin-top: 30px;
+            border: none;
+
+            background-color: lightsteelblue;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top"> P tour </div>
+    <div class="nav">
+        <div class="in">국내여행</div>
+        <div class="out">해외여행</div>
+        <div class="free">자유여행</div>
+        <div class="event">이벤트</div>
+        <div class="login active-menu">Login</div>
+        <div class="my">My</div>
+    </div>
+    <div class="container">
+        <h1>로그인</h1>
+        <div class="header">
+            <div class="header-menu">로그인</div>
+            <div class="header-menu">회원가입</div>
+        </div>
+        <div class="main">
+            <form class="login-form" action="./main.html" method="get">
+                아이디 : <input type="email" placeholder="이메일을 입력하세요" required>
+                <br>
+                비밀번호 : <input type="password" placeholder="비밀번호를 입력하세요" required>
+                <br>
+                <button type="submit">로그인</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
