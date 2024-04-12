@@ -5,71 +5,315 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="./nav.css" rel="stylesheet">
+    
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        .home {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-
-        .nav {
-            font-size: 1.3rem;
-            height: 50px;
-            margin: 50px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: end;
-        }
-
-        .top {
-            margin: 100px;
+        .box-img img {
+            width: 100%;
+            margin: 50px auto;
+            margin-top: 0px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        select
-        {
-            font-size: 3rem;
-            font-weight: bold;
+
+        .qa {
+            margin: 150px auto;
+            margin-bottom: 200px;
+            width: 95%;
             border: none;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        i {
+            font-size: 2rem;
+            color: rgb(43, 42, 42);
+        }
+
+        .qa1 {
+            width: 47%;
+            height: 80px;
+            border: none;
+            background-color: lightblue;
+        }
+    
+
+        .qa2 {
+            width: 47%;
+            height: 80px;
+            border: none;
+            background-color: lightgoldenrodyellow;
             
+        }
+        .qa a{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        .header {
+            width: 90%;
+            height: 50px;
+            margin: 10px auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-menu {
+            width: 50%;
+            height: 50px;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            border: 1px solid lightgray;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-menu:nth-of-type(1) {
+            border-bottom: 0;
+        }
+
+        .header-menu:nth-of-type(2) {
+            border-top: 0;
+            border-right: 0;
+        }
+
+        .main {
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .best-1,.best-2,.best-3 {
+            width: 30%;
+            height: 300px;
+            background-color: white;
+            text-align: center;
+            margin-bottom: 130px;
+            opacity: 0.9;
+        }
+
+        .main img {
+            margin-top: 25px;
+        }
+
+
+        p:nth-of-type(1) {
+            color: cornflowerblue;
+            font-size: 1.1rem;
+        }
+
+        p:nth-of-type(2) {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .header2 {
+            width: 90%;
+            height: 50px;
+            margin: 10px auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header2-menu {
+            width: 50%;
+            height: 50px;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            border: 1px solid lightgray;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header2-menu:nth-of-type(1) {
+            border-top: 0;
+            border-left: 0;
+        }
+
+        .header2-menu:nth-of-type(2) {
+            border-bottom: 0;
+        }
+
+        .main2 {
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            margin-bottom: 100px;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .best-21,.best-22, .best-23 {
+            width: 30%;
+            height: 300px;
+            background-color: white;
+            text-align: center;
+            margin-bottom: 130px;
         }
     </style>
 </head>
 
 <body>
+
+    <div class="left-nav"></div>
+    <div class="overlay"></div>
+    <div class="top-top">
+        <div class="login"><a href="./login.html">Login</a></div>
+        <div class="my"><a href="./my.html">My</a> </div>
+        <div class="emp"><div class="fa-solid fa-bars"></div></div>
+        
+    </div>
     <div class="nav">
-        <div class="home"> P tour </div>
-        <div class="in active-menu">국내여행</div>
-        <div class="out">해외여행</div>
-        <div class="free">자유여행</div>
-        <div class="event">이벤트</div>
-        <div class="login">Login</div>
-        <div class="my">My</div>
+        <div class="home"><a href="./main.html" style="color: black;">P tour</a></div>
+        <div class="in"><a href="./in.html" style="color: black;">국내여행</a></div>
+        <div class="out"><a href="./out.html">해외여행</a></div>
+        <div class="free"><a href="./free.html">자유여행</a></div>
+        <div class="air"><span onclick="alert('준비중입니다')">항공</span> </div>
+        <div class="hotel"><span onclick="alert('준비중입니다')">호텔</span></div>
+        <div class="tour"><span onclick="alert('준비중입니다')">투어&티켓</span></div>
     </div>
     <hr>
-    <div class="top">
-        <select class="region">
-            <option class="1">강원도</option>
-            <option class="2">경기도</option>
-            <option class="3">경상도</option>
-            <option class="4">광주</option>
-            <option class="5">부산</option>
-            <option class="6">서울</option>
-            <option class="7">울산</option>
-            <option class="8">인천</option>
-            <option class="9">전라도</option>
-            <option class="10">제주도</option>
-            <option class="11">충청도</option>
-        </select>
+    <div class="box-img"><img src="./imges/in jeju.jpg"></div>
+    <div class="qa">
+        <button class="qa1">
+            <a href="./qa1.html">
+                <i class="fa-solid fa-road"></i>
+                <span>내륙 단체여행 견적문의. <br>우리가 직접 설계하는 맞춤 제주여행</span>
+            </a>
+        </button>
+        <button class="qa2"> 
+            <a href="./qa2.html">
+                <i class="fa-solid fa-plane-departure"></i>
+                <span>제주도 단체여행 견적문의. <br> 취향대로 만드는 대한민국 방방곡곡</span>
+            </a>
+        </button>
+    </div>
+    <h2>추천 인기상품 Best</h2>
+    <div class="header">
+        <div class="header-menu">내륙여행</div>
+        <div class="header-menu">바다여행</div>
+    </div>
+    <div class="main">
+        <box class="best-1">
+            <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2F74%2F74952b67f631c6fda15039da6d75288e.tn.410x280.jpg&w=1920&q=75">
+            <br><br>
+            <p>#청보리밭 #해미읍성</p>
+            <br>
+            <p>보령/서산</p>
+        </box>
+        <box class="best-2">
+            <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2F41%2F411fc0715476cc6a2e90a76c078446fd.tn.410x280.png&w=1920&q=75">
+            <br><br>
+            <p>#진안 마이산 #전주 한옥마을</p>
+            <br>
+            <p>진안/전주</p>
+        </box>
+        <box class="best-3">
+            <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2Feb%2Feb601a059732602ad92b4e68e229eef8.tn.410x280.jpg&w=1920&q=75">
+            <br><br>
+            <p>#낭만 BIG 3 #대관령 양떼목장</p>
+            <br>
+            <p>강릉/평창</p>
+        </box>
+    </div>
+    <div class="header2">
+        <div class="header2-menu">내륙여행</div>
+        <div class="header2-menu">바다여행</div>
+    </div>
+    <div class="main2">
+        <box class="best-21">
+            <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2Fbe%2Fbe62fce4cdde7d2fc8cb86d8e920499e.tn.410x280.jpg&w=1920&q=75">
+            <br><br>
+            <p>#지원특가 #1박 2일</p>
+            <br>
+            <p>부산/울산/경주</p>
+        </box>
+        <box class="best-22">
+            <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2Fdb%2Fdb32a9d2d3d154d89ac7554ddec433f1.tn.410x280.jpg&w=1920&q=75">
+            <br><br>
+            <p>#봄컬러 듬뿍 #1박 2일</p>
+            <br>
+            <p>제주도</p>
+            
+        </box>
+        <box class="best-23">
+            <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2F6d%2F6d2c44c0d3b7628a5b7eba6009959376.tn.410x280.jpg&w=1920&q=75">
+            <br><br>
+            <p>#한려수도의 보석 #1박 2일</p>
+            <br>
+            <p>거제/통영</p>
+        </box>
     </div>
 
+    <hr>
+    <div class="end">
+        <div class="end-l">
+            <dl>
+                <dt>(주) P Tour</dt>
+                <br>
+                <dd> (주) P Tour 대표 : 이길동</dd>
+                <dd>본사 대표번호 : 0000-0000</dd>
+                <dd>충청남도 천안시 동남구 어쩌구 저쩌구</dd>
+                <dd>사업자 등록번호 : 000-00-00000</dd>
+                <br>
+                <dd>서울지사 대표번호 : 1111-1111</dd>
+                <dd>[서울지사] 서울 특별시 중구 어쩌구 저쩌구</dd>
+                <dd>서울지사 등록번호 : 111-11-11111</dd>
+            </dl>
+        </div>
+        <div class="end-r">
+            <dl>
+                <dt>고객센터</dt>
+                <br>
+                <dd>패키지 여행 담당 : 2222-2222</dd>
+                <dd>자유 여행 담당 : 3333-3333</dd>
+                <br>
+                <dd>대표 메일  PTour@tour.com</dd>
+                <dd>마케팅 제휴  PMarketing@tour.com</dd>
+                <dd>판매 제휴  PSalespartner@tour.com</dd>
+                <dd>대리점 제휴  PSales.agent@tour.com</dd>
+            </dl>
+        </div>
+    </div>
 
+    <script>
+        document.querySelector('.fa-bars').addEventListener('click', function(){
+            document.querySelector('.left-nav').classList.toggle('display-block');
+            document.querySelector('.overlay').classList.toggle('display-block');
+        });
+
+        document.querySelector('.overlay').addEventListener('click', ()=>{
+            document.querySelector('.left-nav').classList.remove('display-block');
+            document.querySelector('.overlay').classList.remove('display-block');
+        });
+    </script>
 
 
 </body>

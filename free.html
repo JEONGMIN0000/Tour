@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="./nav.css" rel="stylesheet">
+    
+    <style>
+
+        .box-img img{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .top{
+            text-align: center;
+            margin: 160px auto;
+        }
+        .top-main{
+            width: 90%;
+            height: 500px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .top-main img{
+            width: 90%;
+            opacity: 0.8;
+
+        }
+        .main{
+            width: 100%;
+            height: 400px;
+            margin: 200px auto;
+            margin-bottom: 250px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items:center;
+            background-color: rgb(226, 250, 250);
+        }
+        .main-left{
+            width: 50%;
+            margin-left: 10px;
+            text-align: center;
+            
+
+        }
+        .main-right{  
+            margin-left: 10px;  
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: white;
+            opacity: 0.9;
+        }
+        .main-right img{
+            width: 80%;
+            margin: 10px;
+        }
+        .main-1, .main-3 {
+            width: 35%;
+            height: 300px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: end;
+        }
+        .main-2{
+            width: 35%;
+            height: 300px;
+            margin-top: 100px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+        }
+        p {
+            font-weight: bold;
+            color: gray;
+            /* color:rgb(168, 148, 57); */
+        }
+        .main span{
+            font-weight: bold;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="left-nav"></div>
+    <div class="overlay"></div>
+    <div class="top-top">
+        <div class="login"><a href="./login.html">Login</a></div>
+        <div class="my"><a href="./my.html">My</a> </div>
+        <div class="emp"><div class="fa-solid fa-bars"></div></div>
+        
+    </div>
+    <div class="nav">
+        <div class="home"><a href="./main.html" style="color: black;">P tour</a></div>
+        <div class="in"><a href="./in.html">국내여행</a></div>
+        <div class="out"><a href="./out.html">해외여행</a></div>
+        <div class="free"><a href="./free.html" style="color: black;">자유여행</a></div>
+        <div class="air"><span onclick="alert('준비중입니다')">항공</span> </div>
+        <div class="hotel"><span onclick="alert('준비중입니다')">호텔</span></div>
+        <div class="tour"><span onclick="alert('준비중입니다')">투어&티켓</span></div>
+    </div>
+    <hr>
+    <div class="box-img"><img src="https://cimgcdn.ybtour.co.kr/attachHome/EP/EM/202402/202402221347094921608003001033.jpg"></div>
+    <div class="top">
+        <h1>Free travel</h1>
+        <h5> 편함에 자유를 더하다 </h5>
+        <div class="top-main">
+            <div class="top-left">
+                <img src="https://dimgcdn.ybtour.co.kr/TN/c5/c5067c7bd6e03295fba7fff6a4d2bffa.tn.630x410.jpg">
+                <br><br>
+                <p>[그리스 9일]</p>
+                <span>#아시아나 비즈니스 #4성 호텔</span>
+            </div>
+            <div class="top-right">
+                <img src="https://dimgcdn.ybtour.co.kr/TN/dc/dc0c02d669e95e62af99c2a8269a96db.tn.630x410.jpg">
+                <br><br>
+                <p>[스페인/포르투칼 9일]</p>
+                <span>#아시아나 국적기 #비즈니스석</span>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-left"><h2>지금 뜨는 자유 여행지</h2><br><h5 style="color:gray">#SNS속 인기 여행지 #자유여행</h5></div>
+        <div class="main-right">
+            <div class="main-1">
+                <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2F45%2F457b6cc1ca4be665d556447b48258769.tn.410x280.jpg&w=1920&q=75">
+                <p>[천천히 걷다 : 삿포로]</p>
+                <span>#자유4일 # 스마일호텔</span>
+            </div>
+            <div class="main-2">
+                <p>[두근두근 에어텔]</p>
+                <span>대만4성급 에어텔 #조식포함</span>
+                <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2Fea%2Fea432515354e27f382f60739fab673e2.tn.410x280.jpg&w=1920&q=75">
+            </div>
+            <div class="main-3">
+                <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2F2b%2F2bdc379879e7f1149ef8c084fbc6968b.tn.410x280.jpg&w=1920&q=75">
+                <p>[천천히 걷다 : 도쿄] </p>
+                <span>#자유 3일 #우에노 #자유텔</span>
+            </div>
+        </div>
+    </div>
+
+            <hr>
+            <div class="end">
+                <div class="end-l">
+                    <dl>
+                        <dt>(주) P Tour</dt>
+                        <br>
+                        <dd> (주) P Tour 대표 : 이길동</dd>
+                        <dd>본사 대표번호 : 0000-0000</dd>
+                        <dd>충청남도 천안시 동남구 어쩌구 저쩌구</dd>
+                        <dd>사업자 등록번호 : 000-00-00000</dd>
+                        <br>
+                        <dd>서울지사 대표번호 : 1111-1111</dd>
+                        <dd>[서울지사] 서울 특별시 중구 어쩌구 저쩌구</dd>
+                        <dd>서울지사 등록번호 : 111-11-11111</dd>
+                    </dl>
+                </div>
+                <div class="end-r">
+                    <dl>
+                        <dt>고객센터</dt>
+                        <br>
+                        <dd>패키지 여행 담당 : 2222-2222</dd>
+                        <dd>자유 여행 담당 : 3333-3333</dd>
+                        <br>
+                        <dd>대표 메일  PTour@tour.com</dd>
+                        <dd>마케팅 제휴  PMarketing@tour.com</dd>
+                        <dd>판매 제휴  PSalespartner@tour.com</dd>
+                        <dd>대리점 제휴  PSales.agent@tour.com</dd>
+                    </dl>
+                </div>
+            </div>
+    
+
+    <script>
+        document.querySelector('.fa-bars').addEventListener('click', function(){
+            document.querySelector('.left-nav').classList.toggle('display-block');
+            document.querySelector('.overlay').classList.toggle('display-block');
+        });
+
+        document.querySelector('.overlay').addEventListener('click', ()=>{
+            document.querySelector('.left-nav').classList.remove('display-block');
+            document.querySelector('.overlay').classList.remove('display-block');
+        });
+    </script>
+
+</body>
+</html>
