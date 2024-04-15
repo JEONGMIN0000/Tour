@@ -210,6 +210,17 @@
             </dl>
         </div>
     </div>
+    <script>
+        document.querySelector('.fa-bars').addEventListener('click', function () {
+            document.querySelector('.left-nav').classList.toggle('display-block');
+            document.querySelector('.overlay').classList.toggle('display-block');
+        });
+
+        document.querySelector('.overlay').addEventListener('click', () => {
+            document.querySelector('.left-nav').classList.remove('display-block');
+            document.querySelector('.overlay').classList.remove('display-block');
+        });
+    </script>
 </body>
 
 </html>
