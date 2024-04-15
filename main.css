@@ -150,7 +150,7 @@ select{
 }
 .best-1, .best-2, .best-3{
     width: 28%;
-    height: 400px;
+    height: 450px;
     background-color: white;
     border: 2px solid gray;
     border-style: dashed;
