@@ -7,6 +7,10 @@
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link href="./nav.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Dongle&family=Gothic+A1&family=Sunflower:wght@300&display=swap" rel="stylesheet">
     
     <style>
     
@@ -46,9 +50,9 @@
             height: 400px;
         }
 
-        .box-left {
+        #box-left {
             width: 40%;
-            background-image: url("https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2Fe7%2Fe7136d4aa3844486b2ce7761a1d77c6a.tn.410x280.jpg&w=1920&q=75");
+            background-image: url("https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2Fe7%2Fe7136d4aa3844486b2ce7761a1d77c6a.tn.410x280.jpg&w=1920&q=75"); 
             background-size: cover;
             opacity: 0.9;
         }
@@ -91,7 +95,7 @@
             justify-content: center;
             align-items: center;
         }
-        .box-left:hover, .box-top:hover, .box-bottom:hover, .box-footl:hover, .box-footr:hover{
+        #box-left:hover, .box-top:hover, .box-bottom:hover, .box-footl:hover, .box-footr:hover{
             transition-duration: 1s;
             transform: scale(1.2,1.2);
             z-index: 1;
@@ -103,7 +107,23 @@
 
 <body>
 
-    <div class="left-nav"></div>
+    <div class="left-nav">
+        <dl>
+            <h1> <a href="./main.html" style="color: black;">P tour</a> </h1>
+            <br>
+            <p > <a href="./login.html">Login</a> </p>
+            <p > <a href="./my.html"> My </a> </p>
+            <br>
+            <p> <a href="./in.html"> 국내여행</a> </p>
+            <p> <a href="./out.html">해외여행</a></p>
+            <p> <a href="./free.html">자유여행 </a></p>
+            <p> <a onclick="alert('준비중입니다')"> 항공</a> </p>
+            <p> <a onclick="alert('준비중입니다')"> 호텔</a> </p>
+            <p> <a onclick="alert('준비중입니다')"> 투어&티켓 </a></p>
+            <br>
+            <p> <a href="./qa1.html"> 예약문의</a></p>
+        </dl>
+    </div>
     <div class="overlay"></div>
     <div class="top-top">
         <div class="login"><a href="./login.html">Login</a></div>
@@ -122,30 +142,38 @@
     </div>
     <hr>
     <div class="box-img">
-        <img src="https://cimgcdn.ybtour.co.kr/attachHome/EP/EM/202404/202404021557300371104009001016.jpg"></div>
-    <h2>추천 인기상품 Best</h2>
+        <img src="https://img-kyowontour.kyowontour.com/hp/202403/20240325163900011vvdhrtuklcfvvha.jpg"></div>
+        <h2>추천 인기상품 Best</h2>
     <div class="main">
         <box class="best-1">
-            <img src="https://dimgcdn.ybtour.co.kr/TN/ab/ab17e23462697629861973ac1fc2cdfb.tn.410x280.jpg">
-            <p>미동부, 캐나다 완전 일주 10일</p>
+            <a href="./out-1.html" style="color: black;">
+                <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2Fe7%2Fe7136d4aa3844486b2ce7761a1d77c6a.tn.410x280.jpg&w=1920&q=75">
+                <p>상해 / 주가각 4일</p>
+            </a>
         </box>
         <box class="best-2">
-            <img src="https://dimgcdn.ybtour.co.kr/TN/8d/8d69002d083a920fbc956b91fa0d1b5e.tn.410x280.jpg">
-            <p>미서부 완전일주 + 4대 캐년 10/11일</p>
+            <span onclick="alert('예약마감되었습니다')">
+                <img src="https://dimgcdn.ybtour.co.kr/TN/b9/b98ee72574ffaa2dc9eb13bf053037c1.tn.410x280.jpg">
+                <p>유네스코 세계유산 이탈리아 , 스위스</p>
+            </span>
         </box>
         <box class="best-3">
-            <img src="https://dimgcdn.ybtour.co.kr/TN/67/6740f27be2717467efbfb91f21e3d411.tn.410x280.jpg">
-            <p>미동부, 캐나다 완전일주 10일</p>
+            <span onclick="alert('예약마감되었습니다')">
+                <img src="https://dimgcdn.ybtour.co.kr/TN/67/6740f27be2717467efbfb91f21e3d411.tn.410x280.jpg">
+                <p>미동부, 캐나다 완전일주 10일</p>
+            </span>
         </box>
         <box class="best-4">
-            <img src="https://dimgcdn.ybtour.co.kr/TN/21/217a754c0441677a62fad3c05d2b4179.tn.410x280.jpg">
-            <p>미서부 완전일주 + 5대 캐년 10/11일</p>
+            <span onclick="alert('예약마감되었습니다')">
+                <img src="https://dimgcdn.ybtour.co.kr/TN/21/217a754c0441677a62fad3c05d2b4179.tn.410x280.jpg">
+                <p>미서부 완전일주 + 5대 캐년 10/11일</p>
+            </span>
         </box>
     </div>
     <h2>홈쇼핑 방영상품</h2>
     <div class="main2">
         <div class="box-main">
-            <div class="box-left"></div>
+            <a href="./out-1.html" id="box-left"></a>
             <div class="box-right">
                 <div class="box-top"></div>
                 <div class="box-bottom"></div>

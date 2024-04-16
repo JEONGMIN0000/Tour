@@ -3,16 +3,23 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+
+    font-family: "Gothic A1", sans-serif;
+            font-weight: bold;
+            font-style: normal;
 }
 
 .left-nav {
     width:300px;
     height:100vh;
-    background-color: rgb(247, 236, 248);
+    background-color: rgb(233, 245, 252);
     position: fixed;
     left:0;
     z-index: 2;
     display: none;
+}
+h1{
+    margin: 100px;
 }
 .overlay {
     width:100vw;
@@ -112,3 +119,14 @@ img {
 }
 dt{font-weight: bold; margin: 10px;}
 dd{font-size: 0.8rem; margin: 5px;}
+
+dl p{
+    color:grey;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+}
+
+p a:hover{
+    color: black;
+}

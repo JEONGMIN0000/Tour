@@ -6,28 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="./login.css" rel="stylesheet">
+    <link href="./nav.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Dongle&family=Gothic+A1&family=Sunflower:wght@300&display=swap" rel="stylesheet">
     
     <style>
-        .header-menu:nth-of-type(1){
-            border-bottom: 0;
-        }
 
-
-        .main {
-            margin: 30px;
-            width: 800px;
-            height: 300px;
-            font-size: 1rem;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        h1{
+            text-align: center;
+            margin: 300px;
+        }        
 
     </style>
 </head>
@@ -53,37 +43,54 @@
     </div>
     <div class="overlay"></div>
     <div class="top-top">
-        <div class="login"><a href="./login.html" style="color: black;">Login</a></div>
-        <div class="my"><a href="./my.html">My</a></div>
+        <div class="login"><a href="./login.html">Login</a></div>
+        <div class="my"><a href="./my.html">My</a> </div>
         <div class="emp"><div class="fa-solid fa-bars"></div></div>
+        
     </div>
-    <div class="top"> <a href="./main.html" style="color: black;">P tour</a>  </div>
     <div class="nav">
-        <div class="in"><a href="./in.html">국내여행</a></div>
-        <div class="out"><a href="./out.html">해외여행</a> </div>
-        <div class="free"><a href="./free.html">자유여행</a> </div>
+        <div class="home"><a href="./main.html" style="color: black;">P tour</a></div>
+        <div class="in"><a href="./in.html" style="color: black;">국내여행</a></div>
+        <div class="out"><a href="./out.html">해외여행</a></div>
+        <div class="free"><a href="./free.html">자유여행</a></div>
         <div class="air"><span onclick="alert('준비중입니다')">항공</span> </div>
         <div class="hotel"><span onclick="alert('준비중입니다')">호텔</span></div>
         <div class="tour"><span onclick="alert('준비중입니다')">투어&티켓</span></div>
     </div>
     <hr>
-    <div class="container">
-        <h2>로그인</h2>
-        <div class="header">
-            <div class="header-menu">로그인</div>
-            <div class="header-menu"><a href="./login2.html">회원가입</a> </div>
+    
+        <h1>[예정] 마일리지 가입 폼</h1>
+
+    <hr>
+    <div class="end">
+        <div class="end-l">
+            <dl>
+                <dt>(주) P Tour</dt>
+                <br>
+                <dd> (주) P Tour 대표 : 이길동</dd>
+                <dd>본사 대표번호 : 0000-0000</dd>
+                <dd>충청남도 천안시 동남구 어쩌구 저쩌구</dd>
+                <dd>사업자 등록번호 : 000-00-00000</dd>
+                <br>
+                <dd>서울지사 대표번호 : 1111-1111</dd>
+                <dd>[서울지사] 서울 특별시 중구 어쩌구 저쩌구</dd>
+                <dd>서울지사 등록번호 : 111-11-11111</dd>
+            </dl>
         </div>
-        <div class="main">
-            <form class="login-form" action="./main.html" method="get">
-                아이디 : <input type="email" placeholder="이메일을 입력하세요" required>
+        <div class="end-r">
+            <dl>
+                <dt>고객센터</dt>
                 <br>
-                비밀번호 : <input type="password" placeholder="비밀번호를 입력하세요" required>
+                <dd>패키지 여행 담당 : 2222-2222</dd>
+                <dd>자유 여행 담당 : 3333-3333</dd>
                 <br>
-                <button type="submit" id="btn"><a href="./main.html" style="color: white;">로그인</a></button>
-            </form>
+                <dd>대표 메일  PTour@tour.com</dd>
+                <dd>마케팅 제휴  PMarketing@tour.com</dd>
+                <dd>판매 제휴  PSalespartner@tour.com</dd>
+                <dd>대리점 제휴  PSales.agent@tour.com</dd>
+            </dl>
         </div>
     </div>
-
 
     <script>
         document.querySelector('.fa-bars').addEventListener('click', function(){
@@ -96,6 +103,7 @@
             document.querySelector('.overlay').classList.remove('display-block');
         });
     </script>
+
 
 </body>
 

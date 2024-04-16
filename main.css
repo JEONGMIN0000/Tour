@@ -2,16 +2,24 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+
+    font-family: "Gothic A1", sans-serif;
+            font-weight: bold;
+            font-style: normal;
 }
 .left-nav {
     width:300px;
     height:100vh;
-    background-color: rgb(247, 236, 248);
+    background-color: rgb(233, 245, 252);
     position: fixed;
     left:0;
     z-index: 2;
     display: none;
 }
+h1{
+    margin: 100px;
+}
+
 .overlay {
     width:100vw;
     height:100vh;
@@ -84,25 +92,25 @@ a:visited, a:link {color: gray;}
 }
 .top-box{
     position: absolute;
-    width: 400px;
-    height: 300px;
+    width: 380px;
+    height: 380px;
     background-color: white;
     border: none;
     top: 350px;
-    left: 50px; 
+    left: 70px; 
 }
 .top-box h2{
-    margin-top: 40px;
+    margin-top: 70px;
     text-align: center;
 }
 .top-img img{
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin: 0 auto;
     opacity: 0.9;
 }
 #input{
-    margin: 50px;
+    margin: 60px 40px;
     color: black;
     width: 300px;
     height: 40px;
@@ -113,36 +121,43 @@ a:visited, a:link {color: gray;}
     border: none;
     color: rgb(73, 73, 73);
     font-weight: bold;
-    margin-left: 50px;
+    margin-left: 40px;
 }
-.main-1 span{
-    width: auto;
-    height: 80px;
-    margin: 250px;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-}
-
-select{
-    font-size: 2rem;
-    font-weight: bold;
-    color: crimson;
-    border:none;
-}
-
-.main-2{
-
+#main-1h1{
+    text-align: center;
+    margin: 150px auto;
+    margin-top: 250px;
     
 }
 
-.main3 h2{
+.main-1box a{
+    width: 90%;
+    margin: 50px auto;
+    
+    font-weight: bold;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-1l{
+    width: 40%;
+    opacity: 0.9;
+    margin: 30px ;
+}
+.main-1r{
+    width: 60%;
+    margin: 50px;
+}
+
+.main2 h2{
     margin: 100px;
-    margin-top: 400px;
+    margin-top: 300px;
     text-align: center;
 }
-.main-3{
+.main-2{
     margin-bottom: 150px;
     display: flex;
     justify-content: space-evenly;
@@ -152,12 +167,12 @@ select{
     width: 28%;
     height: 450px;
     background-color: white;
-    border: 2px solid gray;
+    border: 2px solid rgb(151, 151, 151);
     border-style: dashed;
     text-align: center;
     margin-bottom: 150px;
 }
-.main-3 img{
+.main-2 img{
     margin: 40px 0px 20px 0px;
     width: 90%;
 } 
@@ -190,3 +205,14 @@ p:nth-of-type(2){
 }
 dt{font-weight: bold; margin: 10px;}
 dd{font-size: 0.8rem; margin: 5px;}
+
+
+dl p{
+    color: gray;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+}
+p a:hover{
+    color: black;
+}

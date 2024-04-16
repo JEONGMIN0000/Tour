@@ -6,6 +6,10 @@
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link href="./nav.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Dongle&family=Gothic+A1&family=Sunflower:wght@300&display=swap" rel="stylesheet">
     
     <style>
 
@@ -15,20 +19,25 @@
         }
         .top{
             text-align: center;
-            margin: 160px auto;
+            margin: 170px auto;
         }
         .top-main{
-            width: 90%;
-            height: 500px;
-            margin: 50px auto;
+            width: 95%;
+            height: 400px;
+            margin: 70px auto;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+        .top-left{
+            width: 46%
+        }
+        .top-right {
+            width: 48%;
+        }
         .top-main img{
-            width: 90%;
-            opacity: 0.8;
-
+            width: 80%;
+            opacity: 0.85;
         }
         .main{
             width: 100%;
@@ -38,17 +47,17 @@
             display: flex;
             justify-content: space-evenly;
             align-items:center;
-            background-color: rgb(226, 250, 250);
+            background-color: rgb(225, 250, 223);
         }
         .main-left{
-            width: 50%;
+            width: 35%;
             margin-left: 10px;
             text-align: center;
             
 
         }
         .main-right{  
-            margin-left: 10px;  
+            margin-left: 10px; 
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -57,42 +66,57 @@
         }
         .main-right img{
             width: 80%;
-            margin: 10px;
+            margin: 30px;
         }
         .main-1, .main-3 {
-            width: 35%;
+            width: 30%;
             height: 300px;
-            margin-bottom: 100px;
+            margin: 10px auto;
+            margin-bottom: 150px;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: end;
         }
         .main-2{
-            width: 35%;
+            width: 30%;
             height: 300px;
-            margin-top: 100px;
+            margin-top: 150px;
 
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: baseline;
         }
-        p {
+        p:nth-of-type(1) {
             font-weight: bold;
             color: gray;
-            /* color:rgb(168, 148, 57); */
         }
-        .main span{
+        span p, a p{
+            text-align: center;
             font-weight: bold;
             color: black;
         }
-
     </style>
 </head>
 <body>
 
-    <div class="left-nav"></div>
+    <div class="left-nav">
+        <dl>
+            <h1> <a href="./main.html" style="color: black;">P tour</a> </h1>
+            <br>
+            <p > <a href="./login.html">Login</a> </p>
+            <p > <a href="./my.html"> My </a> </p>
+            <br>
+            <p> <a href="./in.html"> 국내여행</a> </p>
+            <p> <a href="./out.html">해외여행</a></p>
+            <p> <a href="./free.html">자유여행 </a></p>
+            <p> <a onclick="alert('준비중입니다')"> 항공</a> </p>
+            <p> <a onclick="alert('준비중입니다')"> 호텔</a> </p>
+            <p> <a onclick="alert('준비중입니다')"> 투어&티켓 </a></p>
+            <br>
+            <p> <a href="./qa1.html"> 예약문의</a></p>
+        </dl>
+    </div>
     <div class="overlay"></div>
     <div class="top-top">
         <div class="login"><a href="./login.html">Login</a></div>
@@ -110,22 +134,29 @@
         <div class="tour"><span onclick="alert('준비중입니다')">투어&티켓</span></div>
     </div>
     <hr>
-    <div class="box-img"><img src="https://cimgcdn.ybtour.co.kr/attachHome/EP/EM/202402/202402221347094921608003001033.jpg"></div>
+    <div class="box-img">
+        <!--<img src="https://img-kyowontour.kyowontour.com/hp/202311/20231103084055375bkcgyggltjzbmzc.jpg"> -->
+        <img src="https://img-kyowontour.kyowontour.com/hp/202312/20231211163052829wkxshnnhxasrorh.jpg">
+    </div>
     <div class="top">
-        <h1>Free travel</h1>
+        <h1 style="margin-bottom: 10px;">Free travel</h1>
         <h5> 편함에 자유를 더하다 </h5>
         <div class="top-main">
             <div class="top-left">
-                <img src="https://dimgcdn.ybtour.co.kr/TN/c5/c5067c7bd6e03295fba7fff6a4d2bffa.tn.630x410.jpg">
-                <br><br>
-                <p>[그리스 9일]</p>
-                <span>#아시아나 비즈니스 #4성 호텔</span>
+                <a href="./free-1.html" style="color: black;">
+                    <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2F45%2F457b6cc1ca4be665d556447b48258769.tn.410x280.jpg&w=1920&q=75">
+                    <br><br>
+                    <p>[천천히 걷다 : 삿포로]</p>
+                    <span>#자유4일 # 스마일호텔</span>
+                </a>
             </div>
             <div class="top-right">
-                <img src="https://dimgcdn.ybtour.co.kr/TN/dc/dc0c02d669e95e62af99c2a8269a96db.tn.630x410.jpg">
-                <br><br>
-                <p>[스페인/포르투칼 9일]</p>
-                <span>#아시아나 국적기 #비즈니스석</span>
+                <span onclick="alert('예약마감되었습니다')">
+                    <img src="https://dimgcdn.ybtour.co.kr/TN/dc/dc0c02d669e95e62af99c2a8269a96db.tn.630x410.jpg">
+                    <br><br>
+                    <p>[스페인/포르투칼 9일]</p>
+                    <span>#아시아나 비즈니스 #4성 호텔</span>
+                </span>
             </div>
         </div>
     </div>
@@ -133,19 +164,25 @@
         <div class="main-left"><h2>지금 뜨는 자유 여행지</h2><br><h5 style="color:gray">#SNS속 인기 여행지 #자유여행</h5></div>
         <div class="main-right">
             <div class="main-1">
-                <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2F45%2F457b6cc1ca4be665d556447b48258769.tn.410x280.jpg&w=1920&q=75">
-                <p>[천천히 걷다 : 삿포로]</p>
-                <span>#자유4일 # 스마일호텔</span>
+                <span onclick="alert('예약마감되었습니다')">
+                    <img src="https://dimgcdn.ybtour.co.kr/TN/c5/c5067c7bd6e03295fba7fff6a4d2bffa.tn.630x410.jpg">
+                    <p>[그리스 9일]</p>
+                    <p>#아시아나 국적기 #비즈니스석</p>
+                </span>
             </div>
             <div class="main-2">
-                <p>[두근두근 에어텔]</p>
-                <span>대만4성급 에어텔 #조식포함</span>
-                <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2Fea%2Fea432515354e27f382f60739fab673e2.tn.410x280.jpg&w=1920&q=75">
+                <span onclick="alert('예약마감되었습니다')">
+                    <p>[두근두근 에어텔]</p>
+                    <p>대만4성급 에어텔 #조식포함</p>
+                    <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2Fea%2Fea432515354e27f382f60739fab673e2.tn.410x280.jpg&w=1920&q=75">
+                </span>
             </div>
             <div class="main-3">
-                <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2F2b%2F2bdc379879e7f1149ef8c084fbc6968b.tn.410x280.jpg&w=1920&q=75">
-                <p>[천천히 걷다 : 도쿄] </p>
-                <span>#자유 3일 #우에노 #자유텔</span>
+                <span onclick="alert('예약마감되었습니다')">
+                    <img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2F2b%2F2bdc379879e7f1149ef8c084fbc6968b.tn.410x280.jpg&w=1920&q=75">
+                    <p>[천천히 걷다 : 도쿄] </p>
+                    <p>#자유 3일 #우에노 #자유텔</p>
+                </span>
             </div>
         </div>
     </div>
