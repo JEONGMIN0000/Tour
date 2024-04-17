@@ -55,7 +55,7 @@
         <div class="top-box">
             <h2>어디로 떠나고 싶으세요?</h2>
             <form id="travelForm">
-                <input type="text" id="input" name="travel_type" placeholder="  여행지 입력 : 국내여행 / 해외여행">
+                <input type="text" id="input" name="travel_type" placeholder="  여행지 입력 : 고성 / 상해 / 삿포로">
                 <button type="submit" id="search">검색하기</button>
             </form>
         
@@ -144,11 +144,14 @@
         document.getElementById('travelForm').addEventListener('submit',function(e){
             e.preventDefault();
             let travelType = document.getElementById('input').value.toLowerCase();
-            if(travelType =='국내여행'){
-                window.location.href="./in.html";
+            if(travelType =='고성'){
+                window.location.href="./in-1.html";
             }
-            else if(travelType =='해외여행'){
-                window.location.href="./out.html";
+            else if(travelType =='상해'){
+                window.location.href="./out-1.html";
+            }
+            else if(travelType =='삿포로'){
+                window.location.href="./free-1.html";
             }
             else{
                 alert('입력한 여행 유형에 해당하는 페이지를 찾을 수 없습니다.');
