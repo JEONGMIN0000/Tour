@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="./nav.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Dongle&family=Gothic+A1&family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <style>
+        form {
+            width: 70%;
+            margin: 0 auto;
+        }
+        table{
+            margin: 50px auto;
+            width: 100%;
+            height: 50px;
+        }
+        .form-pinfo th{
+            width: 20%;
+        }
+
+        h2{
+            margin: 100px 0px 30px 0px;
+        }
+        h3, li{
+            margin: 10px;
+            text-align: center;
+        } 
+        th{
+            width: 15%;
+            background-color: rgb(233, 232, 232);
+            text-align: center;
+        }
+        td{
+            height: 40px;
+            text-align: center;
+        }
+        
+        textarea{
+            width: 80%;
+            height: 70px;
+        }
+        button{
+            margin: 80px auto;
+            width: 40%;
+            height: 70px;
+
+
+            border: none;
+            background-color: lightsteelblue;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .form-submit{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="left-nav">
+        <dl>
+            <h1> <a href="./main.html" style="color: black;">P tour</a> </h1>
+            <br>
+            <p > <a href="./login.html">Login</a> </p>
+            <p > <a href="./my.html"> My </a> </p>
+            <br>
+            <p> <a href="./in.html"> 국내여행</a> </p>
+            <p> <a href="./out.html">해외여행</a></p>
+            <p> <a href="./free.html">자유여행 </a></p>
+            <p> <a onclick="alert('준비중입니다')"> 항공</a> </p>
+            <p> <a onclick="alert('준비중입니다')"> 호텔</a> </p>
+            <p> <a onclick="alert('준비중입니다')"> 투어&티켓 </a></p>
+            <br>
+            <p> <a href="./qa1.html"> 예약문의</a></p>
+        </dl>
+    </div>
+    <div class="overlay"></div>
+    <div class="top-top">
+        <div class="login"><a href="./login.html">Login</a></div>
+        <div class="my"><a href="./my.html">My</a> </div>
+        <div class="emp">
+            <div class="fa-solid fa-bars"></div>
+        </div>
+
+    </div>
+    <div class="nav">
+        <div class="home"><a href="./main.html">P tour</a></div>
+        <div class="in active-menu"><a href="./in.html">국내여행</a></div>
+        <div class="out"><a href="./out.html">해외여행</a></div>
+        <div class="free"><a href="./free.html">자유여행</a></div>
+        <div class="air"><span onclick="alert('준비중입니다')">항공</span> </div>
+        <div class="hotel"><span onclick="alert('준비중입니다')">호텔</span></div>
+        <div class="tour"><span onclick="alert('준비중입니다')">투어&티켓</span></div>
+    </div>
+    <hr>
+    <form>
+        <div class="form-imfo">
+            <h2> 예약하기 </h2>
+            <hr>
+            <dl>
+                <li> 홈페이지를 통한 예약은 확정이 아닌 접수 상태이며, 담당자 확인 후 최종 요금 및 예약 확정이 진행됩니다. </li>
+                <li> 예약금은 예약 확정 후 담당자를 통해 안내되며, 지정 시간 내 예약금을 결제하지 않으신 경우 예약이 임의 취소될 수 있습니다. </li>
+                <li> 항공권 또는 항공권이 포함된 상품의 경우 세금 및 유류할증료가 포함된 가격이며, 유류할증료는 유가 및 환율에 따라 변동될 수 있습니다. </li>
+                <li> 아동/유아 기준은 항공사마다 상이하여 예약 후 최종 확정됩니다. </li>
+            </dl>
+            <hr>
+            <br>
+        </div>
+        <div class="form-tinfo">
+            <h2>상품 정보</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th> 상품명 </th>
+                        <td colspan="3"> [북해도2일]◇제주항공+시내호텔1박◇삿포로 자유여행 2일 </td>
+                    </tr>
+                    <tr>
+                        <th> 예약유형 </th>
+                        <td> 일반예약 ( 40명 예약가능 ) </td>
+                        <th> 예약금 </th>
+                        <td> 별도안내 </td>
+                    </tr>
+                    <tr>
+                        <th> 이용교통 </th>
+                        <td> ✈ 제주항공</td>
+                        <th> 여행기간 </th>
+                        <td> 출발 : 2024.05.04 07:00 -> 도착 : 2024.05.05 21:00 </td>
+                    </tr>
+                    <tr>
+                        <th> 일정 </th>
+                        <td colspan="3"> 일반예약 ( 40명 예약가능 ) </td>
+                    </tr>
+                    <tr>
+                        <th> 요청사항 </th>
+                        <td colspan="3"> <textarea></textarea> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="form-pinfo" >
+            <h2> 문의고객 정보 </h2>
+            <table style="width: 70%;">
+                <tbody>
+                    <tr>
+                        <th> 이름 </th>
+                        <td> <input type="text" id="name" required> </td>
+                    </tr>
+                    <tr>
+                        <th > 성별 </th>
+                        <td> <label> <input type="radio" name="xy"> 남  <input type="radio" name="xy"> 여 </label required> </td>
+                    </tr>
+                    <tr>
+                        <th> 휴대폰 번호 </th>
+                        <td> <input type="tel" id="tel" placeholder="01012345678" size="11" required> </td>
+                    </tr>
+                    <tr>
+                        <th> 이메일 </th>
+                        <td> <input type="email" id="email" placeholder=" 예시: pppp@naver.com " required> </td>
+                    </tr>
+                    
+                    <tr>
+                        <th rowspan="3"> 여행인원 </th>
+                        <td> 성인 <input type="text" id="tripnum" size="3" required> 명 </td> 
+                    </tr>
+                    <tr>
+                        <td> 아동 <input type="text" id="tripnum" size="3"> 명 </td>
+                    </tr>
+                    <tr>
+                        <td> 유아 <input type="text" id="tripnum" size="3"> 명 </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="form-submit">
+                <button type="submit"><a href="./in-1.html" style="color: white;"> 예약하기 </a> </button>
+            </div>
+        </div>
+    </form>
+    <hr>
+    <div class="end">
+        <div class="end-l">
+            <dl>
+                <dt>(주) P Tour</dt>
+                <br>
+                <dd> (주) P Tour 대표 : 이길동</dd>
+                <dd>본사 대표번호 : 0000-0000</dd>
+                <dd>충청남도 천안시 동남구 어쩌구 저쩌구</dd>
+                <dd>사업자 등록번호 : 000-00-00000</dd>
+                <br>
+                <dd>서울지사 대표번호 : 1111-1111</dd>
+                <dd>[서울지사] 서울 특별시 중구 어쩌구 저쩌구</dd>
+                <dd>서울지사 등록번호 : 111-11-11111</dd>
+            </dl>
+        </div>
+        <div class="end-r">
+            <dl>
+                <dt>고객센터</dt>
+                <br>
+                <dd>패키지 여행 담당 : 2222-2222</dd>
+                <dd>자유 여행 담당 : 3333-3333</dd>
+                <br>
+                <dd>대표 메일 PTour@tour.com</dd>
+                <dd>마케팅 제휴 PMarketing@tour.com</dd>
+                <dd>판매 제휴 PSalespartner@tour.com</dd>
+                <dd>대리점 제휴 PSales.agent@tour.com</dd>
+            </dl>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.fa-bars').addEventListener('click', function () {
+            document.querySelector('.left-nav').classList.toggle('display-block');
+            document.querySelector('.overlay').classList.toggle('display-block');
+        });
+
+        document.querySelector('.overlay').addEventListener('click', () => {
+            document.querySelector('.left-nav').classList.remove('display-block');
+            document.querySelector('.overlay').classList.remove('display-block');
+        });
+    </script>
+</body>
+
+</html>

@@ -13,8 +13,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Dongle&family=Gothic+A1&family=Sunflower:wght@300&display=swap" rel="stylesheet">
     
     <style>
-
+        *{
+            margin: 15px ;
+        }
+        .main-img{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .img{
+            width: 48%;
+            margin: 50px 0px;
+        }
         
+        .main-top, .main{
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        .main-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            width: 40%;
+            height: 50px;
+
+            margin: 50px auto;           
+            border: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            background-color: rgb(250, 245, 177);
+        }
+        
+        table, th, td {
+            border: 1px solid lightgray;
+            border-collapse: collapse;
+        }
+        table{
+            width: 100%;
+            text-align: center;
+            margin: 70px auto;
+            margin-top: 30px;
+        }
+        th, td{
+            height: 45px;
+        }
+        th{
+            background-color: rgb(235, 234, 234);
+        }
+
+        .main-1, .main-2, .main-3{
+            width: 100%;
+            margin: 100px auto;
+        }
+        .main-1{
+            margin-top: 30px;
+        }
+        h4{
+            margin: 30px 0px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main p{
+            margin-left: 80px;
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
     </style>
 </head>
 
@@ -55,65 +127,234 @@
     </div>
     <hr>
     
-    <h2>[경남테마여행] 여행만 갔는데 내가 인스타 인플루언서? 고성 1박2일 여행</h2>
-    <hr>
-    <div class="slid-img"></div>
-    <h3>여행 주요 일정</h3>
-    <table>
-        <tbody>
-            <tr>
-                <td rowspan="2">일정</td>
-                <td> 🚌 버스</td>
-            </tr>
-            <tr>
-                <td>출발 : -> 도착 : </td>
-            </tr>
-            <tr>
-                <td> 방문도시</td>
-                <td> 서울 -> 고성</td>
-            </tr>
-            <tr>
-                <td> 1일차 : 서울 > 고성 - 그레이스 정원 -> 사천 - 삼천포 용궁시장</td>
-            </tr>
-            <tr>
-                <td> 2일차 : 사천 > 고성 - 상족암 - 진주성 > 서울 </td>
-            </tr>
-        </tbody> 
-    </table>
-    <h3>상품가</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>구분</th>
-                <th>성인 (만 12세 이상)</th>
-                <th>아동 (만 2세 ~ 만 12세 미만)</th>
-                <th>유아 (만 2세 미만)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>총 상품가</td>
-                <td>99,000원</td>
-                <td>99,000원</td>
-                <td>0원</td>
-            </tr>
-        </tbody>
-    </table>
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    ☀
-                </td>
-                <td>
-                    🌨
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="main">
+    <div class="main-top">
+        <h2 style="margin: 30px auto; text-align: center;" >[경남테마여행] 여행만 갔는데 내가 인스타 인플루언서? 고성 1박2일 여행</h2>
+        <hr>
+        <div class="main-img">
+                <div class="img"><img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2F80%2F80aaff0fe0e3e3c662dcafc8bb84f045.tn.410x280.jpg&w=1920&q=75"></div>
+                <!-- <div class="img"><img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2Fb4%2Fb42d85aa096562fd6d327e750e0a988f.tn.410x280.PNG&w=1920&q=75"></div> -->
+                <div class="img"><img src="https://prdt.ybtour.co.kr/_next/image?url=https%3A%2F%2Fdimgcdn.ybtour.co.kr%2FTN%2Fe9%2Fe9107d532bf7c9fb85f87414d41ac457.tn.410x280.JPG&w=1920&q=75"></div>
+        </div>
+        <br>
+        <h3>여행 주요 일정</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <th rowspan="2">일정</th>
+                    <td> 🚌 버스</td>
+                </tr>
+                <tr>
+                    <td>출발 : 2024.05.04 07:00 <i class="fa-solid fa-arrow-right"></i> 도착 : 2024.05.05 21:00 </td>
+                </tr>
+                <tr>
+                    <th> 방문도시</th>
+                    <td> 서울 <i class="fa-solid fa-arrow-right"></i> 고성</td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <i class="fa-solid fa-location-dot"></i> 1일차 <i class="fa-solid fa-ellipsis-vertical" style="color: white;"></i>  서울 <i class="fa-solid fa-arrow-right"></i> 고성 ( 그레이스 정원 ) <i class="fa-solid fa-arrow-right"></i> 사천 ( 삼천포 용궁시장 ) </td>
+                </tr>
+                <tr>
+                    <td colspan="2">  <i class="fa-solid fa-location-dot"></i> 2일차 <i class="fa-solid fa-ellipsis-vertical" style="color: white;"></i>  서울 <i class="fa-solid fa-arrow-right"></i>  사천  <i class="fa-solid fa-arrow-right"></i>  고성 ( 상족암 , 진주성 ) <i class="fa-solid fa-arrow-right"></i> 서울 </td>
+                </tr>
+            </tbody> 
+        </table>
+        <h3>상품가</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>성인 (만 12세 이상)</th>
+                    <th>아동 (만 2세 ~ 만 12세 미만)</th>
+                    <th>유아 (만 2세 미만)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>총 상품가</th>
+                    <td colspan="2">99,000원</td>
+                    <td>0원</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <h3> 포함 / 불포함 </h3>
+            <thead>
+                <tr>
+                    <th> ( <i class="fa-solid fa-plus"> </i> ) 포함사항</th>
+                    <th> ( <i class="fa-solid fa-minus"> </i> ) 불포함사항 </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 
+                        <dl style="text-align: left;">
+                            <li> 교통비</li>
+                            <li> 숙박료</li>
+                            <li> 3식제공</li>
+                            <li> 입장료 (진주성, 공룡박물관) </li>
+                        </dl>
+                    </td>
+                    <td>
+                        <dl style="text-align: left;">
+                            <li> 여행자보험</li>
+                            <li> 제공 외 식사</li>
+                            <li> 개인비용</li>
+                        </dl>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
+    <div class="main-button">
+        <button><a href="./reservation-1.html" style="color:rgb(83, 83, 83);;">예약하기</a></button>
+    </div>
 
+    <hr style="border: 1px dashed lightgray;">
+    
+    <div class="main" style="margin: 100px auto;">
+        <h2 style="margin: 60px 0px 0px 0px;">일차별 일정</h2>
+        <div class="main-1" style="border: 1px solid lightgray;" >
+            <h4 style="background-color: lightgray; color: white; margin: 10px;"> <i class="fa-regular fa-flag"></i> 1일차 </h4>
+            <br>
+            <h3>  <i class="fa-solid fa-location-dot"></i> 서울 </h3>
+            <br>
+            <p> <i class="fa-solid fa-check"></i> 집결 </p>
+            <P> <i class="fa-regular fa-clock" style="color: white;"></i>[07:00] 광화문 사거리 동화면세점 앞 (10분전 집결) </P>
+            <p> <i class="fa-solid fa-arrow-right"></i> 5호선 광화문역 6번 출구 </p>
+            <p> <i class="fa-solid fa-arrow-right"></i> 1호선 시청역 3번출구에서 동화면세점으로 300m 도보 </p>
+            <br>
+            <p>  </p>
+            <p>  </p>
+            <br>
+            <p>  </p>
+            <p>  </p>
+            <br>
+            <h3> <i class="fa-solid fa-location-dot"></i> 고성</h3>
+            <br>
+            <p> <i class="fa-solid fa-check"></i>중식 <span>[중식제공]</span></p>
+            <p> <i class="fa-regular fa-clock" style="color: white;"></i><i class="fa-solid fa-minus"></i> 백반 </p>
+            <p>  <i class="fa-solid fa-circle-exclamation"></i> 식사 메뉴는 현지 사정에 따라 변동 될 수 있습니다. </p>
+            <br>
+            <p> <i class="fa-solid fa-check"></i>수국길을 따라 아름다운 정원 </p>
+            <br>
+            <p style="font-weight: bold;"> [그레이스 공원] </p>
+            <p> <i class="fa-solid fa-minus"></i> 곧게 뻗는 메타 세콰이어 길과 계절별로 아름다운 꽃이 피는 정원! </p>
+            <p> <i class="fa-solid fa-minus"></i> 7월이 되면 수국이 아름답게 피어져 있는 아름다운 그레이스 정원! </p>
+            <p> <i class="fa-solid fa-minus"></i> 수국뿐만 아니라 다양한 열대 식물과 나무를 볼 수 있는 수목원입니다. </p>
+            <br>
+            <div class="box-1">
+                <h3>그레이스 정원 </h3>
+                <hr style="border: 1px dashed; color: lightgrey;">
+                <ul> 
+                    <span><img src="https://dimgcdn.ybtour.co.kr/TN/99/99ce9dc678f73a5b2a17aee729f1ba29.tn.410x280.png"></span>
+                    <span><img src="https://dimgcdn.ybtour.co.kr/TN/99/998a4b99d41a67833d1aca824ce4531a.tn.410x280.png"></span>
+                </ul>
+            </div>
+            <br>
+            <p> <i class="fa-solid fa-check"></i>소가야 왕들의 무덤 고성 고분군 </p>
+            <br>
+            <p style="font-weight: bold;"> [고성 고분군] </p>
+            <p> <i class="fa-solid fa-minus"></i> 유네스코 세계문화 유산에 등재된 역사 깊은 문화재! </p>
+            <p> <i class="fa-solid fa-minus"></i> 인스타 핫플레이스 성지인 고성 송학동 고분군! </p>
+            <p> <i class="fa-solid fa-minus"></i> 초록초록한 잔디와 함께 어디서 찍어도 아름다운 전경을 자랑하는 고분군 </p>
+            <br>
+            <div class="box-2">
+                <h3>  </h3>
+                <hr style="border: 1px dashed; color: lightgrey;">
+                <ul> 
+                    <span><img src="https://dimgcdn.ybtour.co.kr/TN/80/80aaff0fe0e3e3c662dcafc8bb84f045.tn.410x280.jpg"></span>
+                    <span><img src="https://dimgcdn.ybtour.co.kr/TN/b4/b42d85aa096562fd6d327e750e0a988f.tn.410x280.PNG"></span>   
+                </ul>
+                <p>  <i class="fa-solid fa-circle-exclamation"></i> 참고하세요 </p>
+            </div>
+            <br>
+            <h3> <i class="fa-solid fa-location-dot"></i> 사천 </h3>
+            <br>
+            <p> <i class="fa-solid fa-check"></i> 개별석식 </p>
+            <br>
+            <p style="font-weight: bold;"> [삼천포 용궁시장] </p>
+            <p> <i class="fa-solid fa-minus"></i> 삼천포 바다에서 갓잡은 신선한 해산물을 보고 맛 볼 수 있는 대표 수산어 시장! </p>
+            <p> <i class="fa-solid fa-minus"></i> 생동감이 넘치는 삼천포 용궁수산시장을 즐길 수 있습니다. </p>
+            <br>
+            <div class="box-3">
+                <h3> 삼천포용궁시장 </h3>
+                <hr style="border: 1px dashed; color: lightgrey;">
+                <ul> 
+                    <span><img src="https://dimgcdn.ybtour.co.kr/TN/48/48f75289abc8e3d35d3e4e1039017fc9.tn.410x280.jpg"></span>
+                    <span><img src="https://dimgcdn.ybtour.co.kr/TN/e4/e44b6dab701c63b71a5d9b5ad03a3e6a.tn.410x280.jpg"></span>
+                </ul>
+            </div>
+            <br>
+            <p>  </p>
+        </div>
+        <div class="main-2" style="border: 1px solid lightgray;">
+            <h4 style="background-color: lightgray; color: white; margin: 10px;"> <i class="fa-regular fa-flag"></i> 2일차 </h4>
+            <br>
+            <h3>  <i class="fa-solid fa-location-dot"></i> 사천 </h3>
+            <br>
+            <p> <i class="fa-solid fa-check"></i> 조식 <span>[조식제공]</span></p>
+            <p> <i class="fa-regular fa-clock" style="color: white;"></i><i class="fa-solid fa-minus"></i> 백반 </p>
+            <p>  <i class="fa-solid fa-circle-exclamation"></i> 식사 메뉴는 현지 사정에 따라 변동 될 수 있습니다. </p>
+            <br>
+            <h3> <i class="fa-solid fa-location-dot"></i> 고성</h3>
+            <br>
+            <p> <i class="fa-solid fa-check"></i> 해식동굴와 공룡발자국을 볼 수 있는 상족암과 공룡박물관 </p>
+            <br>
+            <p style="font-weight: bold;"> [상족암 & 공룡박물관] </p>
+            <p> <i class="fa-solid fa-minus"></i> 1억 5천년전으로의 시간여행을 떠날 수 있는 상족암과 공룡 박물관! </p>
+            <p> <i class="fa-solid fa-minus"></i> 군립공원으로 지정된 대표 해식 동굴(포토존)에서 인생샷을~ </p>
+            <br>
+            <div class="box-4">
+                <h3> 상족암 </h3>
+                <hr style="border: 1px dashed; color: lightgrey;">
+                <ul> 
+                    <span><img src="https://dimgcdn.ybtour.co.kr/TN/ca/ca977c37557b5e129a0f6b13af482655.tn.410x280.JPG"></span>
+                    <span><img src="https://dimgcdn.ybtour.co.kr/TN/b4/b44cf135be6dac442a6d90009a630d8b.tn.410x280.JPG"></span>
+                </ul>
+            </div>
+            <br>
+            <p> <i class="fa-solid fa-check"></i> 임금을 향해 두손모아 공경을! 진주성 </p>
+            <br>
+            <p style="font-weight: bold;"> [진주성] </p>
+            <p> <i class="fa-solid fa-minus"></i> 진주성을 위에서 바라보는 남강교와 유유자적한 느낌적인 느낌! </p>
+            <p> <i class="fa-solid fa-minus"></i> 백제와 신라가 접경한 최전선에 위치하여 전략적인 요충지로 치열한 공방이 이뤄졌던 진주성! </p>
+            <p> <i class="fa-solid fa-minus"></i> 산책로 조성과 인생샷을 즐길 수 있습니다. </p>
+            <br>
+            <div class="box-5">
+                <h3> 진주성 </h3>
+                <hr style="border: 1px dashed; color: lightgrey;">
+                <ul> 
+                    <span><img src="https://dimgcdn.ybtour.co.kr/TN/7c/7c62413d46ecbdeff40fb50fa66c2e5a.tn.410x280.jpg"></span>
+                    <span><img src="https://dimgcdn.ybtour.co.kr/TN/fe/fe1c2c86220003b9a4ecb433c2ca6f22.tn.410x280.jpg"></span>
+                </ul>
+            </div>
+            <br>
+            <p> <i class="fa-solid fa-check"></i> 중식 <span>[중식제공]</span></p>
+            <p> <i class="fa-regular fa-clock" style="color: white;"></i><i class="fa-solid fa-minus"></i> 백반 </p>
+            <p>  <i class="fa-solid fa-circle-exclamation"></i> 식사 메뉴는 현지 사정에 따라 변동 될 수 있습니다. </p>
+            <br>
+            <h3>  <i class="fa-solid fa-location-dot"></i> 서울 </h3>
+            <br>
+            <p> <i class="fa-solid fa-check"></i> 해산 </p>
+            <P> <i class="fa-regular fa-clock" style="color: white;"></i>[21:00] 서울 도착 및 해산 </P>
+            <p> <i class="fa-solid fa-arrow-right"></i> 하차시 죽전 - 양재 - 광화문으로 하차합니다. </p>
+            <br>
+            <hr style="border: 1px dashed; color: lightgrey;">
+            <br>
+            <p> <i class="fa-solid fa-house-chimney"></i> 숙박 : - </p>
+            <p> <i class="fa-solid fa-bowl-food"></i> 식사 : [조식] 현지식 백반 [중식] 현지식 백반 [석식] 불포함 </p>
+            <br>
+        </div>
+        <div class="main-3" style="border: 1px solid lightgray;">
+            <h4 style="background-color: lightgray; color: white; margin: 10px;"> <i class="fa-regular fa-flag"></i> 고객리뷰 및 여행후기 ( 0건 ) </h4>
+            <hr style="border: 1px solid lightgrey;">
+            <br>
+            <p> 등록된 리뷰가 없습니다. 리뷰를 작성해 주세요. </p>
+            <br>
+            <hr style="border: 1px solid lightgrey;">
+            <br>
+        </div>
     </div>
     <hr>
     <div class="end">
@@ -156,6 +397,7 @@
             document.querySelector('.left-nav').classList.remove('display-block');
             document.querySelector('.overlay').classList.remove('display-block');
         });
+
     </script>
 
 
