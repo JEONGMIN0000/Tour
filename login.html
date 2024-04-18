@@ -75,11 +75,11 @@
         </div>
         <div class="main">
             <form class="login-form" action="./main.html" method="get">
-                아이디 : <input type="email" placeholder="이메일을 입력하세요" required>
+                아이디 : <input type="email" class="loginId" placeholder="이메일을 입력하세요" required>
                 <br>
-                비밀번호 : <input type="password" placeholder="비밀번호를 입력하세요" required>
+                비밀번호 : <input type="password" class="loginPw" placeholder="비밀번호를 입력하세요" required>
                 <br>
-                <button type="submit" id="btn"><a href="./main.html" style="color: white;">로그인</a></button>
+                <button type="submit" id="btn2" onclick="tryLogin()"><a href="./main.html" style="color: white;">로그인</a></button>
             </form>
         </div>
     </div>
@@ -95,6 +95,33 @@
             document.querySelector('.left-nav').classList.remove('display-block');
             document.querySelector('.overlay').classList.remove('display-block');
         });
+
+
+        
+        document.querySelector('#loginId').addEventListener('keydown',
+        (e)=>{
+            
+            if(event.keyCode ==13){
+                
+                document.querySelector('#loginPw').focus();
+            }
+            
+        });
+        document.querySelector('#loginPw').addEventListener('keydown',
+        (e)=>{
+                if(e.keyCode ==13){
+                    tryLogin();
+
+                }
+
+        });
+
+        document.querySelector('#btn2').addEventListener('click',tryLogin);
+
+        function tryLogin(){ 
+            document.querySelector('#loginId').value = null;
+            document.querySelector('#loginPw').value = null;
+        }
     </script>
 
 </body>

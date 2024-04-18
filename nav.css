@@ -25,7 +25,7 @@ h1{
 }
 .overlay {
     width:100vw;
-    height:120vh;
+    height:120vh;g
     background-color: gray;
     opacity: 0.3;
     position: fixed;
